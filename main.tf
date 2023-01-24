@@ -17,7 +17,7 @@ resource "azurerm_network_interface" "module" {
   ip_configuration {
     name                          = "ipconfig-${count.index}"
     subnet_id                     = var.subnet_id
-    private_ip_address_allocation = "dynamic"
+    private_ip_address_allocation = "Dynamic"
   }
 
   tags = {
